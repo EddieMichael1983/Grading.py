@@ -2,18 +2,24 @@
 user_grade = input("Enter a number representing your student\'s grade: ")
 user_grade = int(user_grade)
 
-if user_grade = 100:
+if user_grade == 100:
     print ('A+')
 elif user_grade > 89 and user_grade <100:
-    print ('A')
+    print ('A', end = '')
 elif user_grade > 79 and user_grade <= 89:
-    print ('B')
+    print ('B', end = '')
 elif user_grade > 69 and user_grade <= 79:
-    print ('C')
+    print ('C', end = '')
 elif user_grade > 59 and user_grade <= 69:
-    print ('D')
+    print ('D', end= '')
 elif user_grade <= 59:
     print ('F')
+
+if user_grade % 10 >= 7:
+    print('+')
+
+if user_grade % 10 <=3:
+    print('-')
 
 import random
 rival_score = random.randint(0,100)
